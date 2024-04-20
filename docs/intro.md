@@ -2,46 +2,72 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Documentation Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This is the documentation for **Besiege-Modern-Mod**.
 
-## Getting Started
+:::tip[TIP]
+**Besiege-Modern-Mod** can be subscribed in steam workshop.
+:::
 
-Get started by **creating a new site**.
+## Objective
+Today, some of the logic components that come with besiege have been able to achieve some basic automation. By combining sensors, timers, and logic gates, creative players have built whole bunch of incredible creations.
+However, in the game itself, it is very difficult to perform numerical calculations, and it may take dozens or hundreds of logic parts to form a computing unit. This method is not efficient, not to mention that setting up virtual logic cases is also very painful.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Then I came up with this mod, where the logic units are succinctly wired on a ciruit board and can handle varies kind of signals, such as
+- null
+- bool
+- float
+- vector2 (2D coordinates)
+- vector3 (3D coordinates, position/velocity/acceleration)
+- Quaternion (rotation)
+- package (collection of multiple signals, can be considered as parallel data, like \{bool, float, vector3, null\}).
 
-### What you'll need
+I believe that as the basic units of the mod is complete, besiege players can build automated machinery with more fancy fucntions. The only limit is imagination while **besiege players never lack that**.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+***Let's make it happen!!!***
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**.
+## Overview of the mod
+Generally, there are three kinds of block in this mod, i.e. **sensors**, **logic units** and **executors** (corresponding to input→process→output).
 
-The classic template will automatically be added to your project after you run the command:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### Logic units
+All of the logic units has input pins and output pins, some of them may have control pins as well.
+They get the data from input pins, process it and generate outputs.
+In this mod, we have:
+- `IF` if condition
+- `ALU` numerical calculation
+- `WHILE` conditional loop
+- `FOR` times loop
+- `PACKER` pack up input signal
+- `UNPACKER` unpack input signal
+- `MUX` select input signal
+- `REGISTER` store single signal
+- `MEMORY` store signals with address
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### Sensors
+All of the sensors has output pins, some of them may have input pins as well.
+They are mainly responsible for generating signal for processing/execution.
+Equipped with wireless mode.
+- `CONST` generate constant signal
+- `SWITCH` generate bool signal which can be toggled by key
+- `POSE SENSOR` generate pose information
+- `GPS` generate position information
+- `IMU` generate velocity, acceleration information
+- `RADAR` detect object and generate the information of the detected object
+- `WIRELESS` receive wireless signal and output it
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+### Executors
+All of the executors has input pins.
+Equipped with wireless mode(except for steering hinge).
+- `KEY EMULATOR` emulate holding key
+- `STEERING HINGE` steer to the given angle
+- `WIRELESS` send wireless signal
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### Other
+Connect logic units, sensors and executors all together and make magics happen.
+- `Board` put units on it and wire them up
+- `INPUT PIN` the input port for the board
+- `OUTPUT PIN` the output port for the board
+- `Wire` connect the input port and output port
