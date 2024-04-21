@@ -11,6 +11,10 @@ const config = {
   title: 'Besiege Modern Mod Documentation',
   tagline: 'Logics are cool',
   favicon: 'img/favicon.ico',
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   // Set the production url of your site here
   url: 'https://chen-yulin.github.io',
