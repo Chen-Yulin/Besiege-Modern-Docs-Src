@@ -59,15 +59,15 @@ mindmap
             WIRELESS
         ((Others))
             Board
-            INPUT PIN
-            OUTPUT PIN
+            INPUT port
+            OUTPUT port
             WIRE
 
 ```
 
 ### Logic units
-All of the logic units has input pins and output pins, some of them may have control pins as well.
-They get the data from input pins, process it and generate outputs.
+All of the logic units has input ports and output ports, some of them may have control ports as well.
+They get the data from input ports, process it and generate outputs.
 In this mod, we have:
 - `IF`          if condition
 - `ALU`         numerical calculation
@@ -80,7 +80,7 @@ In this mod, we have:
 - `MEMORY`      store signals with address
 
 ### Sensors
-All of the sensors has output pins, some of them may have input pins as well.
+All of the sensors has output ports, some of them may have input ports as well.
 They are mainly responsible for generating signal for processing/execution.
 Equipped with wireless mode.
 - `CONST`           generate constant signal
@@ -92,7 +92,7 @@ Equipped with wireless mode.
 - `WIRELESS`        receive wireless signal and output it
 
 ### Executors
-All of the executors has input pins.
+All of the executors has input ports.
 Equipped with wireless mode(except for steering hinge).
 - `KEY EMULATOR`    emulate holding key
 - `STEERING HINGE`  steer to the given angle
@@ -101,6 +101,6 @@ Equipped with wireless mode(except for steering hinge).
 ### Other
 Connect logic units, sensors and executors all together and make magics happen.
 - `Board`       put units on it and wire them up
-- `INPUT PIN`   the input port for the board
-- `OUTPUT PIN`  the output port for the board
+- `INPUT pin`   the input port for the board
+- `OUTPUT pin`  the output port for the board
 - `WIRE`        connect the input port and output port
