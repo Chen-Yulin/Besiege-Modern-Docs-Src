@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Documentation Intro
+# Mod Intro
 
 This is the documentation for **Besiege-Modern-Mod**.
 
@@ -25,7 +25,7 @@ Then I came up with this mod, where the logic units are succinctly wired on a ci
 - Quaternion (rotation)
 - package (collection of multiple signals, can be considered as parallel data, like \{bool, float, vector3, null\}).
 
-I believe that as the basic units of the mod is complete, besiege players can build automated machinery with more fancy fucntions. The only limit is imagination while **besiege players never lack that**.
+I believe that as the basic units of the mod is complete, besiege players can build automated machinery with fancier fucntions. The only limit is imagination while **besiege players never lack that**.
 
 ***Let's make it happen!!!***
 
