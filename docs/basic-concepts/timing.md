@@ -9,7 +9,9 @@ There are generally two kinds of unit in this mod, `Immediate Unit` & `Trigger U
 - Immediate Unit: the unit is updated (regenerate output) immediately when the input signals are updated. The speed of deduction of a series of immediate units is zero theoretically in game world.
 - Trigger Unit: the unit is updated in each physical frame (100hz). Most of them are sensors, mainly responsible to trigger the update of other immediate unit.
 
-Those two concepts maybe abstract. Let me explain it through some exapmles.
+Once the unit generated a new signal, the signal will trigger a chain reaction in the related series of circuits until the terminal.
+
+Those concepts maybe abstract. Let me explain it through some exapmles.
 
 **Example 1:**
 Let consider the following simple logic circuit, there are three trigger unit and two immediate unit.

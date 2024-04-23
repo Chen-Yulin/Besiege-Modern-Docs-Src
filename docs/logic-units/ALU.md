@@ -4,6 +4,8 @@ sidebar_position: 2
 # ALU
 ![ALU](./img/ALU.png)
 
+Mainly responsible for numeric calculations.
+
 ## Input Ports
 The number of inputs can be set by the first menu mapper.
 

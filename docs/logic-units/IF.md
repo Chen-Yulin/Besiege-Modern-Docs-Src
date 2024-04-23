@@ -4,6 +4,8 @@ sidebar_position: 1
 # IF
 ![IF](./img/IF.png)
 
+Judge whether the two inputs satisfy the condition.
+
 ## Input Ports
 There are two input ports (`i1`,`i2`).
 Their types are the same. Type can be `bool` or `float`, set by the first menu mapper.
