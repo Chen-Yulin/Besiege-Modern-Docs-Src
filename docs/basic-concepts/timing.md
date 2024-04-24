@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 # Timing
 
-Timing is a very critical part of this mod that nedds special attention.
+Timing is a very critical part of this mod that needs special attention.
 
 There are generally two kinds of unit in this mod, `Immediate Unit` & `Trigger Unit`.
 - Immediate Unit: the unit is updated (regenerate output) immediately when the input signals are updated. The speed of deduction of a series of immediate units is zero theoretically in game world.

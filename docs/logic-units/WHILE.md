@@ -54,9 +54,9 @@ The output signal type of `Condition Process` must be bool.
 
 There are two input ports for while loop `i1` and `i2`.
 
-`i1` is responsibe for receiving the initial data for the loop. `Any` type
+`i1` is responsibe for receiving the initial data for the loop. `any` type
 
-`i2` is responsible for receiving the computed data to feed back into the loop. `Any` type
+`i2` is responsible for receiving the computed data to feed back into the loop. `any` type
 
 ## Control Port
 
@@ -66,11 +66,11 @@ There is one control ports `c1`, with type `bool`, responsible for controlling w
 
 There are three output ports for while loop `o1`, `o2`, `o3`.
 
-`o1` export the result data. `Any` type.
+`o1` export the result data. `any` type.
 
-`o2` is responsibe for receiving the initial data for the loop. `Any` type.
+`o2` is responsibe for receiving the initial data for the loop. `any` type.
 
-`o3` is responsible for receiving the computed data to feed back into the loop. `Any` type.
+`o3` is responsible for receiving the computed data to feed back into the loop. `any` type.
 
 ## Function
 
