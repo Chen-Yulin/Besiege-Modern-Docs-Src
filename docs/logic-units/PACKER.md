@@ -15,4 +15,5 @@ There's four input ports, `i1`,`i2`,`i3`,`i4`, with the type of `any`.
 There's one output port `o1`, with type of `package`.
 
 ## Function
+Once (one of) the four input signals changed, the output `package` is updated.
 The output `package` is in the form of \{`i1`, `i2`, `i3`, `i4`\}.
