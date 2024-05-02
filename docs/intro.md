@@ -52,16 +52,15 @@ mindmap
             GPS
             IMU
             RADAR
-            WIRELESS
         ((Executors))
             KEY EMULATOR
             STEERING HINGE
-            WIRELESS
         ((Others))
             Board
             INPUT port
             OUTPUT port
             WIRE
+            WIRELESS
 
 ```
 
@@ -89,14 +88,12 @@ Equipped with wireless mode.
 - `GPS`             generate position information
 - `IMU`             generate velocity, acceleration information
 - `RADAR`           detect object and generate the information of the detected object
-- `WIRELESS`        receive wireless signal and output it
 
 ### Executors
 All of the executors has input ports.
 Equipped with wireless mode(except for steering hinge).
 - `KEY EMULATOR`    emulate holding key
 - `STEERING HINGE`  steer to the given angle
-- `WIRELESS`        send wireless signal
 
 ### Other
 Connect logic units, sensors and executors all together and make magics happen.
@@ -104,3 +101,4 @@ Connect logic units, sensors and executors all together and make magics happen.
 - `INPUT pin`   the input port for the board
 - `OUTPUT pin`  the output port for the board
 - `WIRE`        connect the input port and output port
+- `WIRELESS`    send and receive wireless signal
