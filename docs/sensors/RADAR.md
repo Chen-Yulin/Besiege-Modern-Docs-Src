@@ -18,3 +18,7 @@ The output's type is `packge`, containing three valid data.
 - `Has Target`, with type of `bool`, indicating whether there is a target detected.
 - `Target position`, with type of `vector3`, is a 3D vector showing the detected targets' world position.
 - `Target velocity`, with type of `vector3`, is a 3D vector showing the detected targets' velocity.
+
+:::note
+The order of these three data in output package is fixed
+:::
