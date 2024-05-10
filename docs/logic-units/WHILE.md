@@ -85,5 +85,5 @@ As mentioned in `Timing` docs, once the signal at `o2` is first updated, the cha
 :::
 
 :::warning
-It is very likely that the `Trigger Unit` in `Initial Data` circuit trigger WHILE when other `Trigger Unit` in `Condition Process`/`Compute Process` havn't initialized yet, so the very begining result of while is very likely to be wrong. Use a Switch Sensor (`Trigger Unit`) with Mux at the end of `Initial Data` circuit and manuelly change the Switch after simulation will solve the problem.
+It is very likely that the `Trigger Unit` in `Initial Data` circuit trigger WHILE when other `Trigger Unit` in `Condition Process`/`Compute Process` havn't initialized yet, so the very begining result of WHILE is very likely to be wrong. Use a Switch Sensor (`Trigger Unit`) with Mux at the end of `Initial Data` circuit and manuelly change the Switch after simulation will solve the problem.
 :::
