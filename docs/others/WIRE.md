@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# Wire
+# WIRE
 ![Wire](./img/WIRE.png)
 
 Wire is responsible for the connection between different circuit boards or executors.

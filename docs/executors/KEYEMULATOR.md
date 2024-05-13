@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # KEY EMULATOR
 
+![key](./img/key.png)
+
 Emulate pressing the key.
 
 Work well with build-in logic blocks and virtual key.

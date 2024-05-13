@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # RADAR
 
+![RADAR](./img/RADAR.png)
+
 Detect machine blocks.
 
 Wireless feature is supported when `off-board`.

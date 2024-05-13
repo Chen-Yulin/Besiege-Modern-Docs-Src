@@ -4,6 +4,7 @@ sidebar_position: 3
 
 # IMU
 
+![IMU](./img/IMU.png)
 
 Generate `package` signal indicating the motion information of the unit.
 
