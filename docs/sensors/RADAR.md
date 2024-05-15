@@ -10,6 +10,10 @@ Detect machine blocks.
 
 Wireless feature is supported when `off-board`.
 
+## Property
+
+There is a `power` slider for RADAR, for adjusting the power(range, the volume covered by the RADAR) of the RADAR.
+
 ## Input
 
 The input signal should be `float` type. This input is used for adjusting the shape of the radar beam (bigger range with smaller width / smaller range with big width).

@@ -24,6 +24,7 @@ Then I came up with this mod, where the logic units are succinctly wired on a ci
 - vector3 (3D coordinates, position/velocity/acceleration)
 - Quaternion (rotation)
 - package (collection of multiple signals, can be considered as parallel data, like \{bool, float, vector3, null\}).
+- Image
 
 I believe that as the basic units of the mod is complete, besiege players can build automated machinery with fancier fucntions. The only limit is imagination while **besiege players never lack that**.
 
@@ -52,13 +53,15 @@ mindmap
             GPS
             IMU
             RADAR
+            CAMERA
         ((Executors))
             KEY EMULATOR
             STEERING HINGE
+            SCREEN
         ((Others))
-            Board
-            INPUT port
-            OUTPUT port
+            BOARD
+            INPUT PORT
+            OUTPUT PORT
             WIRE
             WIRELESS
 

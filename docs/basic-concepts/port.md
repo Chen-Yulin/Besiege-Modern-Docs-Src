@@ -44,6 +44,7 @@ Types:
 - vector3
 - quaternion
 - package
+- image
 - any
 
 If the type of the signal received is different from the port's type, the signal held in port will be set to null (the signal with type `null`), except for ports with type `any`.

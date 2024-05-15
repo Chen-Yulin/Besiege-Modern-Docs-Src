@@ -14,4 +14,5 @@ The table for the data type in this mod.
 | `vector3` | signal & port | 3D vector, \{x(`float`), y(`float`), z(`float`)\} |
 | `quaternion` | signal & port | representing rotation of object, \{w(`float`), i(`float`), j(`float`), k(`float`)\} |
 | `package` | signal & port | a set of four signal, \{signal1(`any`), signal2(`any`), signal3(`any`), signal4(`any`)\} |
+| `image` | signal & port | signal containing a image (ARGB32) |
 | `any`| port | Indicating that all type of signal can be contained |
