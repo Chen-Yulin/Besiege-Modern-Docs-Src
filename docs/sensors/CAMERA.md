@@ -13,6 +13,11 @@ There are three sliders:
 - `Vertical resolution`: the height of the output image's signal
 - `Default FOV`: the default FOV of the camera, i.e. no input signal
 
+:::note
+![cam_pose](./img/camera_pose.png)
+The white texture along the top edge of camera indicates what is upright to the image it will capture.
+:::
+
 ## Input
 
 The input signal should be `float` type. This input is used for adjusting the FOV(field of view) of the camera.
